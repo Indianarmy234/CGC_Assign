@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ 
+ #div1{
+ width:500px;
+ margin:0px auto;
+ background-color: pink;
+ padding:30px;
+ }
+
+</style>
+</head>
+<body>
+<div id="div1">
+<h1> Message Box</h1>
+<form name="loginform" method="post" action="target.html">
+UserName &nbsp <input type="text" name="username" id="username"><br><br>
+Password &nbsp &nbsp <input type="text" name="password" id="password"><br>
+<input type="button" onclick="login(loginform)" value="login">
+</form>
+<script>
+   function login(loginform){
+	   if(loginform.username.value && loginform.password.value){
+		   var username=document.getElementById("username").value;
+		   document.write('<html><body><h1><center>')
+		   document.write("welcome"+ " ");
+		   document.write(username);
+		   document.write('</center></h1></body></html>');
+	   }
+	   else
+		   alert("please enter your name & password");
+   }
+
+</script>
+</div>
+
+
+</body>
+</html>

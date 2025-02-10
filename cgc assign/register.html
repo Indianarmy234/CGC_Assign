@@ -1,0 +1,134 @@
+7<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+body{
+ padding-left:300px;
+ padding-top:80px;
+}
+.form{
+ background: #A2AD9C;
+ border-radius:15px;
+  width:500px;
+ height:450px;
+text-align:center;
+padding-top:30px;
+font-size:17px;
+color:white;
+ font-size:bold;
+}
+.name{
+ width:350px;
+ height:25px;
+ text-size:20px;
+font-size:14px;
+border-radius:8px;
+}
+.email{
+ width:350px;
+ height:25px;
+ text-size:20px;
+ font-size:14px;
+ border-radius:8px;
+}
+.password{
+ width:350px;
+ height:25px;
+ text-size:20px;
+ font-size:14px;
+ border-radius:8px;
+}
+.college{
+ width:350px;
+ height:25px;
+ text-size:20px;
+font-size:14px;
+border-radius:8px;
+}
+.course{
+ width:350px;
+ height:25px;
+ text-size:20px;
+ font-size:14px;
+ border-radius:8px;
+}
+.phone{
+ width:350px;
+ height:25px;
+ text-size:20px;
+ font-size:14px;
+ border-radius:8px;
+}
+.button{
+  height:40px;
+  width:100px;
+  font-size:17px;
+  border-radius:8px;
+}
+.button:hover{
+  
+   background-color:red;
+ color:white;
+}
+.Button{
+  height:40px;
+  width:100px;
+  font-size:17px;
+  border-radius:8px;
+}
+.Button:hover{
+  
+   background-color:red;
+ color:white;
+}
+
+</style>
+</head>
+<body>
+<form action="register.jsp"  method="post" class="form">
+
+    <h1>Regis<span style="color:red">teration </span> Form </h1>
+   
+   Name:     <input type="name" name="name" placeholder="enter name" class="name" ><br><br>
+   Email:    <input type="email" name="email" placeholder="enter email" class="email" ><br><br>
+   Password:    <input type="password" name="password" placeholder="enter password" class="password" ><br><br>
+   College:  <input  type="text" name="college" placeholder="enter your college name" class="college" ><br><br>
+   Course:   <input type="text" name="course" placeholder="enter your course" class="course" ><br><br>
+   phone-no: <input type="text" name="phone" placeholder="phone no" class="phone" ><br><br>
+             <input  onclick="firstpage.html" type="Submit" class="button">
+                 
+                 <input  onclick="login.html" type="login" class="button">
+                 <script src="email-validation.js">
+                 
+                 function ValidateEmail(inputText)
+                 {
+                 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                 if(inputText.value.match(mailformat))
+                 {
+                 alert("Valid email address!");
+                 document.form1.text1.focus();
+                 return true;
+                 }
+                 else
+                 {
+                 alert("You have entered an invalid email address!");
+                 document.form1.text1.focus();
+                 return false;
+                 }
+                 }
+                 
+                 </script>
+   
+</form>
+</body>
+</html>
+
+
+
+  
+  
+  
+  

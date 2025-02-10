@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+padding-top:80px;
+
+}
+
+ #div1{
+ width:500px;
+ height:200px;
+ margin:0px auto;
+ background-color: pink;
+ padding:30px;
+ border-radius:15px;
+ padding-top:50px;
+ }
+ #username{
+ width:350px;
+ height:25px;
+ 
+ }
+ #email{
+ width:350px;
+ height:25px;
+ 
+ }
+ #submit{
+ width:105px;
+ height:40px;
+ font-size:17px;
+ }
+ #submit:hover{
+ background-color:red;
+ color:white;
+ }
+ ::placeholder:hover{
+ 
+ background-color:white;
+  
+  
+ }
+
+</style>
+</head>
+<center>
+<body>
+
+
+
+<div id="div1">
+	<form name="loginform" method="post" action="mydata.jsp">
+	
+		UserName &nbsp<input type="text" name="name" id="username" placeholder="Enter Your Name"><br><br><br>
+		
+		 UserEmail &nbsp<input type="text" name="email" id="email" placeholder="Enter Your Email"><br><br><br>
+		
+		<input type="submit" onclick="login(loginform)" value="Submit" id="submit">
+	</form>
+	
+	<script>
+	
+	function login(loginform){
+		   if(loginform.username.value && loginform.password.value){
+			   var username=document.getElementById("username").value;
+			   document.write('<section1><body><h1><center>')
+			   document.write("welcome"+ " ");
+			   document.write(username);
+			   document.write('</center></h1></body></section1>');
+		   }
+		   else
+			   alert("please enter your name & email");
+	   }
+	</script>
+	</div>
+	</center>
+</body>
+</html>

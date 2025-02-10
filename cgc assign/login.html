@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+ padding-left:300px;
+ padding-top:80px;
+}
+.form{
+ background: #A2AD9C;
+ 
+ border-radius:15px;
+  width:500px;
+ height:250px;
+text-align:center;
+padding-top:30px;
+font-size:17px;
+color:white;
+ font-size:bold;
+}
+.email{
+ width:350px;
+ height:25px;
+ text-size:20px;
+ font-size:14px;
+ border-radius:8px;
+}
+.password{
+ width:350px;
+ height:25px;
+ text-size:20px;
+ font-size:14px;
+ border-radius:8px;
+}
+.button{
+  height:40px;
+  width:100px;
+  font-size:17px;
+  border-radius:8px;
+}
+.button:hover{
+  
+   background-color:red;
+   color:white;
+}
+</style>
+</head>
+<body> 
+
+   <form  name="loginform" action="login.jsp" mothod="post" class="form">
+    <h1><span style="color:red">login</span> Form </h1>
+   
+   Email:  &nbsp  <input type="email" name="email" placeholder="enter email" class="email" ><br><br>
+   Password: &nbsp &nbsp<input type="password" name="password" placeholder="enter password" class="password" ><br><br>
+             <input  onclick="firstpage.html" type="Submit" class="button">
+   
+   <script>
+   function login(loginform){
+	   if(loginform.email.value && loginform.password.value){
+		   var username=document.getElementById("email").value;
+		   document.write('<html><body><h1><center>')
+		   document.write("welcome"+ " ");
+		   document.write(email);
+		   document.write('</center></h1></body></html>');
+	   }
+	   else
+		   alert("please enter your email & password");
+   }
+
+</script>
+</form>
+
+    
+
+</body>
+</html>
